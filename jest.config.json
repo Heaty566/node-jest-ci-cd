@@ -1,7 +1,7 @@
 {
         "moduleFileExtensions": ["js", "json", "ts"],
         "rootDir": "./src",
-        "coverageDirectory": "../coverage",
+        "coverageDirectory": "../node-ci-cd",
         "testEnvironment": "node",
         "testRegex": ".spec.ts$",
         "transform": {
