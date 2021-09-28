@@ -3,6 +3,7 @@
         "version": "1.0.0",
         "main": "index.ts",
         "scripts": {
+                "prepare": "husky install",
                 "start": "NODE_ENV=production  ts-node index.ts",
                 "start:dev": "NODE_ENV=development  nodemon --exec ts-node index.ts",
                 "build": "tsc",
@@ -43,6 +44,7 @@
                 "express": "^4.17.1",
                 "express-session": "^1.17.1",
                 "helmet": "^4.1.1",
+                "husky": "^7.0.2",
                 "mongodb": "^3.6.2",
                 "mongodb-uri": "^0.9.7",
                 "morgan": "^1.10.0",

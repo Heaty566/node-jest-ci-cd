@@ -6,18 +6,13 @@ dotenv.config({
         path: path.resolve(__dirname, `./config/.env.${process.env.NODE_ENV}`),
 });
 
-import { initDb } from "./src/app/db";
-import { initProd } from "./src/app/prod";
-import { routers } from "./src/app/routes";
-import { logger } from "./src/app/logging";
 const app = express();
 
-initDb();
-initProd(app);
-routers(app);
+app.get("/test", function () {
+        return "ok";
+});
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-        logger.info(`Current mode: ${process.env.NODE_ENV}`);
-        logger.info(`Listening on port ${port}`);
+        console.log(`Listening on port ${port}`);
 });
