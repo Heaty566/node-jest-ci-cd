@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1632799010311" clover="3.2.0">
-  <project timestamp="1632799010311" name="All files">
+<coverage generated="1632798185670" clover="3.2.0">
+  <project timestamp="1632798185670" name="All files">
     <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="9" coveredelements="7" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
     <file name="app.ts" path="E:\New folder (2)\mono-node-kit-ts\src\app.ts">
       <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
