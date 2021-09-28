@@ -7,7 +7,7 @@ export const testFunction = () => {
 };
 
 app.get("/test", (req, res) => {
-        return res.send(testFunction);
+        return res.send(testFunction());
 });
 
 export { app };
