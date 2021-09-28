@@ -8,9 +8,9 @@
                 "start:dev": "NODE_ENV=development  nodemon --exec ts-node index.ts",
                 "build": "tsc",
                 "prebuild": "rm -rf dist/*",
-                "test": "NODE_ENV=test  jest",
+                "test": "NODE_ENV=test  jest  --forceExit",
                 "test:watch": "NODE_ENV=test  jest  --watchAll --runInBand --detectOpenHandles",
-                "test:cov": "NODE_ENV=test  jest --coverage --runInBand --detectOpenHandles"
+                "test:cov": "NODE_ENV=test  jest --coverage --runInBand --forceExit"
         },
         "author": "heaty566 <heaty566@gmail.com>",
         "license": "ISC",
@@ -28,16 +28,17 @@
                 "@types/morgan": "^1.9.1",
                 "@types/node": "^14.14.5",
                 "@types/winston": "^2.4.4",
+                "husky": "^7.0.0",
                 "jest": "^26.6.1",
                 "nodemon": "^2.0.6",
                 "supertest": "^5.0.0",
                 "ts-jest": "^26.4.3",
                 "ts-node": "^9.0.0",
                 "tslint": "^5.12.1",
-                "typescript": "^4.0.5",
-                "husky": "^7.0.0"
+                "typescript": "^4.0.5"
         },
         "dependencies": {
+                "@types/supertest": "^2.0.11",
                 "compression": "^1.7.4",
                 "connect-mongodb-session": "^2.4.1",
                 "cors": "^2.8.5",

@@ -4,7 +4,6 @@
         "coverageDirectory": "../coverage",
         "testEnvironment": "node",
         "testRegex": ".spec.ts$",
-        "globalSetup": "<rootDir>/common/test/setEnvVar.ts",
         "transform": {
                 "^.+\\.(t|j)s$": "ts-jest"
         }
